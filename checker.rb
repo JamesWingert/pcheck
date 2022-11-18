@@ -10,10 +10,9 @@ class Checker
       puts "Password must contain at least one number"
       false
     end
+    true
   end
-
-  true
-
+  
   def admin_check(password)
     if password.length < 10 || !password.match(/\W/)
       return false
